@@ -1,4 +1,4 @@
-# Meu [portifólio](https://github.com/liviavieiramendes/portifolio)
+# Meu [portifólio](https://liviavieiramendes.github.io/portifolio/)
 
 Fiz esse projeto com o objetivo de compartilhar meus projetos, currículo e meios de contato com empresas e recrutadores.
 
