@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Livia Mendes - Portfólio</title>
+</head>
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+    
+<main id="inicio" class="cabecalho">
+    <div>
+        <img src="img/LIVIA MENDES.png" alt="Foto de Livia Mendes" class="foto-perfil">
+        <h1>Livia Vieira Mendes</h1>
+        <p class="cabecalho-sub-titulo">Assistente Administrativo em transição de carreira para a área de Tecnologia da Informação</p>
+    </div>
+</main>
+
+<section id="sobre" class="sobre">
+    <h2 class="sobre-titulo">Sobre mim</h2>
+    <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+            Possuo experiência sólida como assistente administrativo, com foco em gestão de contratos, organização de documentos, processamento de notas fiscais e suporte ao cliente. Atuei diretamente em ambientes corporativos, contribuindo para a eficiência de processos e o bom relacionamento entre setores.
+        </p><br>
+        <p class="sobre-paragrafo">
+            Domino a utilização de ferramentas como Pacote Office, Google Workspace, SAP, Omie GClick, SCI e TOTVS, utilizando-as para garantir precisão e agilidade no dia a dia empresarial.
+        </p><br>
+        <p class="sobre-paragrafo">
+            Me destaco quando o assunto é proatividade, comunicação eficaz e capacidade de resolver problemas. Tenho facilidade em lidar com demandas B2C e B2B, promovendo melhorias contínuas e oferecendo suporte eficiente a clientes internos e externos.
+        </p><br>
+        <p class="sobre-paragrafo">
+            Atualmente, estou cursando Engenharia de Software, o que tem ampliado meu repertório técnico e visão sistêmica sobre processos digitais. Estou me aprofundando em Redes de Computadores, Cibersegurança, HTML, CSS, JavaScript, Python e MySQL, e busco oportunidades que unam minha vivência administrativa à tecnologia.
+        </p><br>
+        <p class="sobre-paragrafo">
+            Estou aberta a novas oportunidades que promovam meu crescimento profissional e pessoal!
+        </p>
+    </div>
+</section>
+    
+<section id="projetos" class="projetos">
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
+        <div class="projetos-card">
+            <a href="https://liviavieiramendes.github.io/Analisador-de-numeros/" target="_blank"><img src="./img/projeto1.png" alt="Analisador de Números" class="projetos-imagem"></a>
+            <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Analisador de Números</h3>
+                <p class="paragrafo-projetos">Este projeto é uma aplicação web simples que permite ao usuário inserir uma sequência de números e obter análises estatísticas básicas, como quantidade total, maior valor, menor valor, soma e média.</p>
+            </div>
+        </div>
+        <div class="projetos-card">
+            <a href="https://liviavieiramendes.github.io/Horas-do-Dia/" target="_blank"><img src="./img/projeto2.png" alt="Hora do dia" class="projetos-imagem"></a>
+            <div class="caixa-textos-projetos">
+                <h3 class="info-projetos">Hora do dia</h3>
+                <p class="paragrafo-projetos">Este projeto simples exibe a hora atual do dia e altera o plano de fundo da página automaticamente. A mudança visual acompanha os períodos de manhã, tarde e noite, oferecendo uma experiência dinâmica e intuitiva.</p>
+            </div>
+        </div>
+            <div class="projetos-card">
+                <a href="https://liviavieiramendes.github.io/IMC-e-TDEE/" target="_blank"><img src="./img/projeto3.png" alt="Calcular TDEE" class="projetos-imagem"></a>
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Calcular TDEE</h3>
+                    <p class="paragrafo-projetos">Meio simples e rápido de calcular o Índice de Massa Corporal (IMC) e o Gasto Energético Diário Total (TDEE). O objetivo é proporcionar uma compreensão básica das necessidades de saúde e calóricas diárias, com base em dados físicos e nível de atividade.</p>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section id="contatos" class="contatos">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+    
+    <div class="contato-links">
+        <a href="https://github.com/liviavieiramendes" target="_blank" class="contato-item">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/livia-vieira-mendes/" target="_blank" class="contato-item">
+            <i class="fas fa-envelope"></i> Linkedin
+        </a>
+        <a href="img/LIVIA MENDES - Currículo.pdf" download="LIVIA MENDES - Currículo" class="contato-item">
+            <i class="fas fa-envelope"></i> Currículo
+        </a>
+    </div>
+    
+    <form class="formulario-contato" id="formulario">
+        <div class="grupo-form">
+            <input placeholder="Nome" class="campo-form" id="nome" required>
+        </div>
+        <div class="grupo-form">
+            <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem" required></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar pelo WhatsApp</button>
+    </form>
+</section>
+
+<script>
+    const formulario = document.getElementById('formulario');
+    const nomeInput = document.getElementById('nome');
+    const mensagemInput = document.getElementById('mensagem');
+
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nome = nomeInput.value;
+        const mensagem = mensagemInput.value;
+
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=5511973453690&text=Nome:%20${encodeURIComponent(nome)}%0A%0AMensagem:%20${encodeURIComponent(mensagem)}`;
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
+</body>
+</html>
